@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+nonogram-front/dist
+nonogram-front/tmp
+nonogram-front/out-tsc
+# Only exists if Bazel was run
+nonogram-front/bazel-out
+
+# dependencies
+nonogram-front/node_modules
+
+# profiling files
+nonogram-front/chrome-profiler-events*.json
+
+# IDEs and editors
+nonogram-front/.idea
+nonogram-front/.project
+nonogram-front/.classpath
+nonogram-front.c9/
+nonogram-front/*.launch
+nonogram-front/.settings/
+nonogram-front/*.sublime-workspace
+
+# IDE - VSCode
+nonogram-front/.vscode/*
+nonogram-front/!.vscode/settings.json
+nonogram-front/!.vscode/tasks.json
+nonogram-front/!.vscode/launch.json
+nonogram-front/!.vscode/extensions.json
+nonogram-front/.history/*
+
+# misc
+nonogram-front/.angular/cache
+nonogram-front/.sass-cache
+nonogram-front/connect.lock
+nonogram-front/coverage
+nonogram-front/libpeerconnection.log
+nonogram-front/npm-debug.log
+nonogram-front/yarn-error.log
+nonogram-front/testem.log
+nonogram-front/typings
+
+# System Files
+nonogram-front/.DS_Store
+nonogram-front/Thumbs.db
