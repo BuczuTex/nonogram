@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <td></td>
+        <td *ngFor="let condition of nonogram.conditions[0]">{{ condition }}</td>
+    </tr>
+    <tr *ngFor="let condition of nonogram.conditions[1]; index as i">
+        <td>{{ condition }}</td>
+        <td id="cell{{i}}-{{j}}" class="inactive-cell" *ngFor="let playableCell of nonogram.board[i]; index as j" (click)="changeColor(i, j)"></td>
+    </tr>
+</table>

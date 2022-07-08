@@ -1,0 +1,11 @@
+td {
+  border: 1px solid black;
+  width: 44px;
+  height: 40px;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.active-cell {
+  background-color: black;
+}/*# sourceMappingURL=nonogram-table.component.css.map */

@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NonogramTableComponent } from './nonogram-table/nonogram-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NonogramTableComponent
   ],
   imports: [
     BrowserModule,
@@ -15,4 +17,8 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(title: Title) {
+    title.setTitle("Solve nonograms!");
+  }
+}
